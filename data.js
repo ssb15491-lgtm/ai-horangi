@@ -311,6 +311,50 @@ window.DATA=[
 ]
 },
 {
+"id": "26",
+"date": "2026-11-25",
+"title": "언슬롭, AI가 만든 티 빼는 무료 스킬",
+"tag": "도구",
+"kw": "디자인",
+"b": [
+{
+"h": "링크",
+"t": "https://github.com/heydamir/unslop",
+"c": 0
+},
+{
+"h": "설치 1 (터미널)",
+"t": "claude plugin marketplace add heydamir/unslop",
+"c": 1
+},
+{
+"h": "설치 2 (터미널)",
+"t": "claude plugin install unslop@heydamir",
+"c": 1
+},
+{
+"h": "고칠 파일 적기 (클로드 코드)",
+"t": "/unslop 이 화면(index.html)",
+"c": 1
+},
+{
+"h": "방향이 괜찮으면",
+"t": "이 방향으로 진행해 줘",
+"c": 1
+},
+{
+"h": "알아 두기",
+"t": "- 파일을 직접 고치니 먼저 복사해 두세요.\n- 내용이 빠질 수 있으니 전후를 비교하세요.",
+"c": 0
+},
+{
+"h": "출처",
+"t": "만든 사람: Damir Sokolovsky (@heydamir)\n라이선스: CC BY 4.0\nhttps://creativecommons.org/licenses/by/4.0/",
+"c": 0
+}
+]
+},
+{
 "id": "25",
 "date": "2026-11-24",
 "title": "한옥 마을 자동 디펜스, 네 모델 비교",
