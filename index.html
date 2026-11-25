@@ -27,7 +27,7 @@ h1{font-weight:900;font-size:clamp(28px,7.4vw,46px);line-height:1.25;margin:26px
 footer{margin-top:44px;color:var(--grey);font-size:14px}
 </style></head><body><div class="w"><header><img src="img/tiger.jpg" alt=""><b><a href="#">AI 호랭이 자료실</a></b><a class="ig" href="https://www.instagram.com/ai_beom/">@ai_beom</a></header><main id="m"></main><footer>하루 12시간 AI 쓰는 호랭이가 바로 써볼 프롬프트를 계속 올려요.</footer></div>
 <script src="data.js"></script><script>
-const today=new Date(Date.now()+9*36e5).toISOString().slice(0,10),D=DATA.filter(x=>x.date<=today).sort((a,b)=>b.date.localeCompare(a.date)||b.id-a.id),m=document.getElementById('m');
+const today=new Date(Date.now()+9*36e5).toISOString().slice(0,10),D=DATA.filter(x=>x.date<'2099').sort((a,b)=>{const p=a.date<=today,q=b.date<=today;return p!=q?(p?-1:1):p?(b.date.localeCompare(a.date)||b.id-a.id):a.date.localeCompare(b.date)}),m=document.getElementById('m');
 const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const lk=s=>esc(s).replace(/(https?:\/\/[^\s)<]+)|((?<![\w@\/.-])(?:[a-z0-9-]+\.)+(?:com|ai|dev|org|new|google|io)(?:\/[\w.\/-]*)?)/g,(u)=>u.endsWith('.')?u:`<a href="${u.startsWith('http')?u:'https://'+u}" target="_blank" rel="noopener">${u}</a>`);
 let tag='전체',q='';
